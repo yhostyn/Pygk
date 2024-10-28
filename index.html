@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y Got Kicks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <img src="imagenes/logo.png" alt="Logo de la tienda" class="logo">
+            <div class="header-text">
+                <h1>Y Got Kicks</h1>
+                <h2>Venta de Sneakers</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="caps-link" onclick="window.location.href='gorras.html'">Caps</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Nuestros snikers</h2>
+            <div class="grid">
+                <div class="producto">
+                    <img src="imagenes/AMIRI.webp" alt="Amiri">
+                    <h3>AMIRI</h3>
+                    <p>$130.000</p>
+                    <button onclick="agregarAlCarrito('Amiri', 130.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/D&G.webp" alt="dolce y gabana">
+                    <h3>D&G</h3>
+                    <p>$140.000</p>
+                    <button onclick="agregarAlCarrito('D&G', 140.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/JARRITOS.webp" alt="Jarritos">
+                    <h3>NIKE JARRITOS</h3>
+                    <p>$120.000</p>
+                    <button onclick="agregarAlCarrito('JARRITOS', 120.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/LUI.webp" alt="LUI VUITON">
+                    <h3>LUIS VUITON</h3>
+                    <p>$150.000</p>
+                    <button onclick="agregarAlCarrito('LUIS VUITON', 150.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/LUIS-VUITON.webp" alt="LUIS VUITON">
+                    <h3>LUIS VUITON</h3>
+                    <p>$150.000</p>
+                    <button onclick="agregarAlCarrito('LUIS VUITON', 150.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/OFF-WHITE.webp" alt="OFF-WHITE">
+                    <h3>OFF-WHITE</h3>
+                    <p>$150.000</p>
+                    <button onclick="agregarAlCarrito('OFF-WHITE', 150.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/TRAVIS.webp" alt="TRAVIS">
+                    <h3>TRAVIS</h3>
+                    <p>$130.000</p>
+                    <button onclick="agregarAlCarrito('TRAVIS', 130.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/VALENTINO.webp" alt="VALENTINO">
+                    <h3>VALENTINO</h3>
+                    <p>$130.000</p>
+                    <button onclick="agregarAlCarrito('VALENTINO', 130.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/NI.webp" alt="NIKE DUNK">
+                    <h3>NIKE DUNK</h3>
+                    <p>$120.000</p>
+                    <button onclick="agregarAlCarrito('NIKE DUNK', 120.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/NIKE DUNK.webp" alt="NIKE DUNK">
+                    <h3>NIKE DUNK</h3>
+                    <p>$120.000</p>
+                    <button onclick="agregarAlCarrito('NIKE DUNK', 120.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/TOYOTA.webp" alt="NIKE DUNK TOYOTA">
+                    <h3>NIKE DUNK TOYOTA</h3>
+                    <p>$120.000</p>
+                    <button onclick="agregarAlCarrito('NIKE DUNK TOYOTA', 120.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/RETRO 4.webp" alt="NIKE RETRO 4">
+                    <h3>NIKE RETRO 4</h3>
+                    <p>$130.000</p>
+                    <button onclick="agregarAlCarrito('NIKE RETRO 4', 130.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/NOCTA.webp" alt="NIKE NOCTA">
+                    <h3>NIKE NOCTA</h3>
+                    <p>$160.000</p>
+                    <button onclick="agregarAlCarrito('NIKE NOCTA', 160.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/PUMA.jpg" alt="PUMA SUEDE">
+                    <h3>PUMA SUEDE</h3>
+                    <p>$150.000</p>
+                    <button onclick="agregarAlCarrito('PUMA SUEDE', 150.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/ALEXANDER.jpg" alt="ALEXANDER MCQUEEN">
+                    <h3>ALEXANDER MCQUEEN</h3>
+                    <p>$170.000</p>
+                    <button onclick="agregarAlCarrito('ALEXANDER MCQUEEN', 170.000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/NB.webp" alt="NEW BALANCE 550">
+                    <h3>NEW BALANCE 550</h3>
+                    <p>$150.000</p>
+                    <button onclick="agregarAlCarrito('NEW BALANCE 550', 150.000)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="carrito" onclick="toggleCarrito()">
+            <!-- Icono del carrito (solo visible cuando está cerrado) -->
+            <img src="imagenes/carro.png" alt="Icono de carrito" class="carrito-icono">
+        
+            <!-- Contenido completo del carrito (solo visible cuando está desplegado) -->
+            <div class="carrito-contenido">
+                <h2>Tu carrito</h2>
+                <ul id="carrito-lista"></ul>
+                <p>Total: <span id="total">$0</span></p>
+                <button onclick="finalizarCompra()">Finalizar compra</button>
+                <button id="carrito-cerrar">Cerrar</button>
+                <button onclick="enviarPorWhatsApp()">Enviar pedido por WhatsApp</button>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="carrito-wrapper" class="hidden">
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Venta de Gorras y Tenis &copy; 2024</p>
+            <p>Dirección: Calle 123, Manzanares, Caldas </p>
+            <p>Correo electrónico: ygotkicks@ventas.com</p>
+            <p>Teléfono: +57 3186704679</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

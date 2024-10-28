@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y Got Kicks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <img src="imagenes/logo.png" alt="Logo de la tienda" class="logo">
+            <div class="header-text">
+                <h1>Y Got Kicks</h1>
+                <h2>Venta de Sneakers</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="caps-link" onclick="window.location.href='index.html'">Snikers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Nuestros snikers</h2>
+            <div class="grid">
+                <div class="producto">
+                    <img src="imagenes/c1.png" alt="New Era Classic">
+                    <h3>New Era Classic</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Classic', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c2.png" alt="New Era Vintage">
+                    <h3>New Era Vintage</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Vintage', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c3.png" alt="New Era Heritage">
+                    <h3>New Era Heritage</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Heritage', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c4.png" alt="New Era Retro Fit">
+                    <h3>New Era Retro Fit</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Retro Fit', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c5.png" alt="New Era Premium">
+                    <h3>New Era Premium</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Premium', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c6.png" alt="New Era Snapback">
+                    <h3>New Era Snapback</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Snapback', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c7.png" alt="New Era Street">
+                    <h3>New Era Street</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Street', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c8.png" alt="New Era Performance">
+                    <h3>New Era Performance</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Performance', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c9.png" alt="New Era Signature">
+                    <h3>New Era Signature</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Signature', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c10.png" alt="New Era Special Edition">
+                    <h3>New Era Special Edition</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Special Edition', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c11.png" alt="New Era Limited">
+                    <h3>New Era Limited</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Limited', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c12.png" alt="New Era Urban">
+                    <h3>New Era Urban</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Urban', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c13.png" alt="New Era Elite">
+                    <h3>New Era Elite</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Elite', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c14.png" alt="New Era Flex Fit">
+                    <h3>New Era Flex Fit</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Flex Fit', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c15.png" alt="New Era Sporty">
+                    <h3>New Era Sporty</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Sporty', 250000)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="imagenes/c16.png" alt="New Era Urban Fit">
+                    <h3>New Era Urban Fit</h3>
+                    <p>$250,000</p>
+                    <button onclick="agregarAlCarrito('New Era Urban Fit', 250000)">Agregar al carrito</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <div id="carrito" onclick="toggleCarrito()">
+            <!-- Icono del carrito (solo visible cuando está cerrado) -->
+            <img src="imagenes/carro.png" alt="Icono de carrito" class="carrito-icono">
+        
+            <!-- Contenido completo del carrito (solo visible cuando está desplegado) -->
+            <div class="carrito-contenido">
+                <h2>Tu carrito</h2>
+                <ul id="carrito-lista"></ul>
+                <p>Total: <span id="total">$0</span></p>
+                <button onclick="finalizarCompra()">Finalizar compra</button>
+                <button id="carrito-cerrar">Cerrar</button>
+                <button onclick="enviarPorWhatsApp()">Enviar pedido por WhatsApp</button>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="carrito-wrapper" class="hidden">
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Venta de Gorras y Tenis &copy; 2024</p>
+            <p>Dirección: Calle 123, Manzanares, Caldas </p>
+            <p>Correo electrónico: ygotkicks@ventas.com</p>
+            <p>Teléfono: +57 3186704679</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
